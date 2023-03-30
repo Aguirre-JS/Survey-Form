@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div id="header">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <h1 id= "title" > Form Test</h1>
+    <p id="description">¡Muchas gracias por su tiempo!</p>
+    </div>
+  </head>
+  <body>
+    <div id="container">
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:
+        <input type="text" id="name" placeholder="Ingrese su nombre" required>
+      </label>
+      <label id="email-label" for="email">Email:
+        <input type="email" id="email" placeholder="Ejm: nombre@correo.com" required> 
+      </label>
+      <label id="number-label" for="number">Age (optional):
+        <input type="number" id="number" min="10" max="99" placeholder="Tu edad"> 
+      </label>
+      <label for="dropdown">Selecciona tu Género:
+        <select id="dropdown">
+          <option value=""> (elija uno) </option>
+          <option value="hombre"> Hombre </option>
+          <option value="mujer"> Mujer </option>
+          <option value="nobinario"> No Binario </option>
+        </select>
+      </label>
+    <fieldset>
+      <legend>¿Recomendarias esta página web a un amigo?</legend>
+      <label for="si"><input type="radio" name="rec" id="si" value="si" class="inline"> Definitivamente</label>
+      <label for="quizas"><input type="radio" name="rec" id="quizas" value="quizas" class="inline"> Quizas</label>
+      <label for="no"><input type="radio" name="rec" id="no" value="no" class="inline"> No</label>
+    </fieldset>
+    <fieldset>
+    <legend>¿Cuáles son sus preferencias?</legend>
+      <label for="ciencias"><input id="ciencias" type="checkbox" value="cie" class="inline">Ciencia y Técnologia</label>
+      <label for="letras"><input id="letras" type="checkbox" value="let" class="inline">Letras</label>
+      <label for="historia"><input id="historia" type="checkbox" value="his" class="inline">Historia</label>
+      <label for="leyes"><input id="leyes" type="checkbox" value="ley" class="inline">Leyes</label>
+
+    <label>Ingresar algun comentario o sugerencia: <textarea rows="3" cols="30"   minlenght="1";
+  maxlenght="20" placeholder="Ingrese algun comentario adicional...."></textarea></label>
+    </fieldset>
+    <input type="submit" value="submit" id="submit"></input>
+    </form>
+    </div>
+  </body>
+</html>
